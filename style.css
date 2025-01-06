@@ -136,7 +136,7 @@ button {
     -2px 2px 10px 0 rgb(24, 197, 255),
     2px -2px 10px 0 rgb(255, 43, 43);
     z-index: 5;
-    display: block; /* popup nonactive */
+    display: block; /* popup active */
 }
 #myForm {
     display: flex;
@@ -147,6 +147,16 @@ button {
     0 0 5px rgb(231, 161, 161),
     0 0 10px rgb(231, 161, 161),
     0 0 10px rgb(231, 161, 161);
+}
+.blue-form {
+    text-shadow:
+    0 0 5px rgb(106, 203, 255),
+    0 0 10px rgb(106, 203, 255),
+    0 0 10px rgb(106, 203, 255);
+}
+.seperated {
+    display: flex;
+    gap: 50px;
 }
 input[type="text"] {
     color: black;
@@ -173,7 +183,9 @@ input[type="text"] {
 }
 .input-field {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 .input-field input[type="radio"] {
     transform: scale(1.5);
@@ -197,5 +209,5 @@ input[type="text"] {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
-    display: block; /* popup nonactive */
+    display: block; /* popup active */
 }

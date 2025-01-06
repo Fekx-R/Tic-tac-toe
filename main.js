@@ -51,18 +51,22 @@ const Game = (() => {
                 DisplayMessages.gameOverMessage(`it's a tie!`)
             }
 
+            // Color the box if it's "O"
+            if (e.target.innerText === "O") {
+                e.target.classList.add("red-box");
+            } else {
+                e.target.classList.remove("red-box");
+            }
+
             if (!gameOver) {
                 // Switch player
                 currentPlayerIndex = currentPlayerIndex ? 0 : 1;
                 
-                
                 if (currentPlayerIndex === 0) {
                     DisplayMessages.playerTurnMessage(`${players[0].name}'s turn!`);
-                    e.target.classList.add("red-box");
                     messageSpan.classList.remove("red-message");
                 } else {
                     DisplayMessages.playerTurnMessage(`${players[1].name}'s turn!`);
-                    e.target.classList.remove("red-box");
                     messageSpan.classList.add("red-message");
                 }
             }

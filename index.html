@@ -39,27 +39,29 @@
         <!-- initial pop-up -->
         <div class="game-form">
             <form id="myForm" autocomplete="off">
-                <div class="input-field">
-                    <label class="input-label">(X) Player's 1 name:</label>
-                    <input 
-                    type="text"
-                    name="player1Name"
-                    class="formClass blue"
-                    id="form1"
-                    required
-                    />
+                <div class="seperated">
+                    <div class="input-field">
+                        <label class="input-label blue">(X) Player's 1 name</label>
+                        <input 
+                        type="text"
+                        name="player1Name"
+                        class="formClass blue"
+                        id="form1"
+                        required
+                        />
+                    </div>
+                    <div class="input-field">
+                        <label class="input-label">(O) Player's 2 name</label>
+                        <input 
+                        type="text"
+                        name="player2Name"
+                        class="formClass red"
+                        id="form2"
+                        required
+                        />
+                    </div>
                 </div>
-                <div class="input-field">
-                    <label class="input-label">(O) Player's 2 name:</label>
-                    <input 
-                    type="text"
-                    name="player2Name"
-                    class="formClass red"
-                    id="form2"
-                    required
-                    />
-                </div>
-                <div class="input-field">
+                <!-- <div class="input-field">
                     <input class="check-radio" type="radio" id="1v1" name="choice" value="0" required />
                     <label for="1v1" class="Title container">Player vs Player</label>
                 </div>
@@ -70,7 +72,8 @@
                 <div class="input-field">
                     <input class="check-radio" type="radio" id="aiHard" name="choice" value="2" required />
                     <label for="aiHard" class="Title">Player vs Hard AI</label>
-                </div>
+                </div> -->
+
                 <div class="flex">
                     <button type="submit" class="start-btn">Start Game</button>
                 </div>
