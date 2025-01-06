@@ -17,18 +17,18 @@
     <div id="container">
         <h1>Tic Tac Toe</h1>
         
-        <h3 id="message">Rob's win</h3>
+        <h3 class="message" id="message">Fekx!</h3>
 
         <div id="gameboard">
-            <div class="box">X</div>
-            <div class="box red-box">O</div>
-            <div class="box">X</div>
-            <div class="box">X</div>
-            <div class="box">X</div>
-            <div class="box">X</div>
-            <div class="box red-box">O</div>
-            <div class="box red-box">O</div>
-            <div class="box red-box">O</div>
+            <div class="box" id="0"></div>
+            <div class="box" id="1"></div>
+            <div class="box" id="2"></div>
+            <div class="box" id="3"></div>
+            <div class="box" id="4"></div>
+            <div class="box" id="5"></div>
+            <div class="box" id="6"></div>
+            <div class="box" id="7"></div>
+            <div class="box" id="8"></div>
         </div>
 
         <div id="container-buttons">
@@ -55,20 +55,20 @@
                     type="text"
                     name="player2Name"
                     class="formClass red"
-                    id="form1"
+                    id="form2"
                     required
                     />
                 </div>
                 <div class="input-field">
-                    <input type="radio" id="1v1" name="choice" value="0" required />
+                    <input class="check-radio" type="radio" id="1v1" name="choice" value="0" required />
                     <label for="1v1" class="Title container">Player vs Player</label>
                 </div>
                 <div class="input-field">
-                    <input type="radio" id="ai" name="choice" value="1" required />
+                    <input class="check-radio" type="radio" id="ai" name="choice" value="1" required />
                     <label for="ai" class="Title">Player vs Easy AI</label>
                 </div>
                 <div class="input-field">
-                    <input type="radio" id="aiHard" name="choice" value="2" required />
+                    <input class="check-radio" type="radio" id="aiHard" name="choice" value="2" required />
                     <label for="aiHard" class="Title">Player vs Hard AI</label>
                 </div>
                 <div class="flex">
@@ -76,8 +76,8 @@
                 </div>
             </form>
         </div>
-
         <div class="overlay"></div>
+
         
     </div>
 
