@@ -92,9 +92,9 @@ const Game = (() => {
             currentPlayerIndex = 0;
             gameOver = false;
             
-            if (player1.value === "" && player2.value === "") {
-                return
-            }
+            // can't play if player's name empty
+            if (player1.value === "" || player2.value === "") return;
+
             form.style.display = "none";
             document.querySelector(".overlay").style.display = "none";
             
@@ -130,7 +130,7 @@ const Game = (() => {
 
             form.style.display = "block";
             document.querySelector(".overlay").style.display = "block";
-
+            
             restart();
         }
     return {

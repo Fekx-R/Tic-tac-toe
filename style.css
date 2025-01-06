@@ -211,3 +211,16 @@ input[type="text"] {
     z-index: 2;
     display: block; /* popup active */
 }
+
+/* for phone or tab */
+@media (max-width: 850px) {
+    .game-form {
+        padding: 30px 70px;
+    }
+    .seperated {
+        flex-direction: column;
+    }
+    .message {
+        font-size: 1.7rem;
+    }
+}
